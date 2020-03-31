@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aparecida Nutrição</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1>Aparecida Nutrição</h1>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Meus pacientes</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Peso(kg)</th>
+							<th>Altura(m)</th>
+							<th>Gordura Corporal(%)</th>
+							<th>IMC</th>
+							<th>Remover Paciente</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-pacientes">
+						
+					</tbody>
+				</table>
+
+			</section>
+		</main>
+	
+		<h2 id="adicionar">Adicionar novo paciente</h2>
+		<ul id="mensagem-erro"></ul>
+		
+
+		<form action="" id="form">
+		
+			<input type="text" name="nome" id="nome" placeholder="Nome">
+			 
+			
+			<input type="number" name="peso" id="peso" placeholder="peso">
+
+		
+			<input type="number" name="altura" id="altura" placeholder="altura">
+
+			
+			<input type="text" name="%gordura" id="gordura" placeholder="% gordura">
+
+			<button type="submit" id="adicionar-paciente">Adicionar</button>
+
+		</form>
+   <script src="js/form.js"></script>
+   <script src="js/calculaIMC.js"></script>
+   <script src="js/remover.js"></script>
+	</body>
+</html>
